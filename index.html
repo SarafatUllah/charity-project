@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long Anglers or Rudicians</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css">
+    <link href="./css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/input.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Instrument+Serif:ital@0;1&family=Monomakh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&family=Source+Serif+4:opsz,wght@8..60,200;8..60,300;8..60,400;8..60,500;8..60,600;8..60,700;8..60,800;8..60,900&family=Tinos:wght@700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Instrument+Serif:ital@0;1&family=Monomakh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&family=Quicksand:wght@300&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&family=Source+Serif+4:opsz,wght@8..60,200;8..60,300;8..60,400;8..60,500;8..60,600;8..60,700;8..60,800;8..60,900&family=Tinos:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <script src="https://kit.fontawesome.com/730e76ccd9.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="scroll">
+    <section>
+        <div class="w-full relative">
+            <header>
+                <div class="contact-info w-full">
+                    <div class="main-container w-full flex justify-between items-center">
+                        <p>LONG ANGLERS OR RUDICIANS</p>
+                        <p>+49 123 456789</p>
+                    </div>
+                </div>
+                <div id="header-temp" class="w-full hidden"></div>
+                <nav id="main-header" class="header bg-white relative">
+                    <div class="main-container w-full flex justify-between items-center xl:py-0 py-5">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="./assets/logo.svg" alt="logo">
+                            </a>
+                        </div>
+                        <div class="flex justify-start items-center xl:space-x-[25px] space-x-4">
+                            <div class="nav-outer relative xl:block hidden">
+                                <ul class="navigator flex justify-start items-center space-x-[30px]">
+                                    <li><a class="nav-link active" href="#volume">Volume</a></li>
+                                    <li><a class="nav-link" href="#money">Money</a></li>
+                                    <li><a class="nav-link" href="#charity-story">Charity Story</a></li>
+                                    <li><a class="nav-link" href="#discovery">Discovery</a></li>
+                                    <li><a class="nav-link" href="#our-news">Our News</a></li>
+                                    <span class="nav-indicator-small"></span> <!-- Moving underline -->
+                                    <span class="nav-indicator"></span> <!-- Moving underline -->
+                                </ul>
+                            </div>
+
+                            <img class="w-4 h-5" src="./assets/search-icon.svg" alt="searchIcon">
+                            <div class="cart-box relative cursor-pointer xl:block hidden">
+                                <img class="w-[21px] h-[25px]" src="./assets/flaticon-bag.svg" alt="flaticon-bag">
+                                <div
+                                    class="cart-count size-5 text-white text-xs bg-[var(--theme-color)] flex justify-center items-center  rounded-full absolute top-[-4px] right-[-13px]">
+                                    <span>0</span>
+                                </div>
+                            </div>
+                            <div class=" cursor-pointer  justify-center items-center !ml-[10px] xl:flex hidden"><i
+                                    class="fa-solid fa-bars text-2xl hover:text-[var(--theme-color)]"></i></div>
+
+                            <div class="link-btn xl:block hidden !mr-0">
+                                <a href="#" class="theme-btn btn-style-one">
+                                    <span class="z-10">Donate Now</span>
+                                </a>
+                            </div>
+                            <div id="menu-toggle"
+                                class="menu-bar cursor-pointer justify-center items-center !ml-[10px] xl:hidden flex">
+                                <i class="fa-solid fa-bars text-2xl hover:text-[var(--theme-color)]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu-list" class="mobile-nav-wrapper menu-collapse bg-white xl:hidden block">
+                        <div class="mobile-menu main-container">
+                            <ul class="mobile-navigator flex flex-col justify-start items-start">
+                                <li><a class="nav-link py-2 active" href="#volume">Volume</a></li>
+                                <li><a class="nav-link py-2" href="#money">Money</a></li>
+                                <li><a class="nav-link py-2" href="#charity-story">Charity Story</a></li>
+                                <li><a class="nav-link py-2" href="#discovery">Discovery</a></li>
+                                <li><a class="nav-link py-2" href="#our-news">Our News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </header>
+
+            <main>
+                <section id="charity-story">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide slide1">
+                                <div class="slide-content flex flex-col justify-center items-center">
+                                    <h2>Discover Our Updates & Charity News Content</h2>
+                                    <h3>A Day In The Life Of A Volunteer</h3>
+                                    <p>Volunteering is a rewarding experience that allows individuals to make a
+                                        difference in their
+                                        communities. From helping at local shelters to organizing charity events,
+                                        volunteers play a
+                                        crucial
+                                        role in building stronger societies.</p>
+                                    <div class="link-btn !mr-0 max-w-[183px] flex justify-center">
+                                        <a href="#" class="theme-btn btn-style-one">
+                                            <span class="z-10">READ MORE</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide2">
+                                <div class="slide-content flex flex-col justify-center items-center">
+                                    <h2>Discover Our Updates & Charity News Content</h2>
+                                    <h3>How Volunteering Can Transform Your Life</h3>
+                                    <p>Volunteering not only benefits the community but also has a profound impact on
+                                        the volunteer.
+                                        It
+                                        can
+                                        lead to personal growth, new skills, and a sense of fulfillment that comes from
+                                        helping
+                                        others.</p>
+                                    <div class="link-btn !mr-0 max-w-[183px] flex justify-center">
+                                        <a href="#" class="theme-btn btn-style-one">
+                                            <span class="z-10">READ MORE</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <div class="slide-content flex flex-col justify-center items-center">
+                                    <h2>Discover Our Updates & Charity News Content</h2>
+                                    <h3>Building Stronger Communities</h3>
+                                    <p>Strong communities are built on the foundation of mutual support and cooperation.
+                                        Volunteering
+                                        fosters a sense of belonging and encourages people to work together towards
+                                        common goals.</p>
+                                    <div class="link-btn !mr-0 max-w-[183px] flex justify-center">
+                                        <a href="#" class="theme-btn btn-style-one">
+                                            <span class="z-10">READ MORE</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div
+                            class="custom-next-btn cursor-pointer size-[80px] rounded-full z-[5] bg-white/75 p-2 flex justify-center items-center absolute top-1/2 left-10 transform -translate-y-1/2">
+                            <svg class="button-prev !w-[18px] !h-[38px] transform rotate-90"
+                                xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
+                                <path
+                                    d="M0.220115 0.1912C0.361098 0.0687746 0.552285 0 0.751634 0C0.950983 0 1.14217 0.0687746 1.28315 0.1912L5.00454 3.42372L8.72592 0.1912C8.86771 0.0722442 9.05762 0.00642175 9.25474 0.00790964C9.45186 0.00939752 9.64042 0.0780765 9.77981 0.199154C9.91919 0.320232 9.99826 0.484021 9.99997 0.655244C10.0017 0.826468 9.92591 0.991425 9.78896 1.11459L5.53606 4.8088C5.39508 4.93123 5.20389 5 5.00454 5C4.80519 5 4.614 4.93123 4.47302 4.8088L0.220115 1.11459C0.0791756 0.992127 0 0.826055 0 0.652894C0 0.479733 0.0791756 0.313661 0.220115 0.1912Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div
+                            class="custom-prev-btn cursor-pointer size-[80px] rounded-full z-[5] bg-white/75 p-2 flex justify-center items-center absolute top-1/2 right-10 transform -translate-y-1/2">
+                            <svg class="button-prev !w-[18px] !h-[38px] transform rotate-[270deg]"
+                                xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none">
+                                <path
+                                    d="M0.220115 0.1912C0.361098 0.0687746 0.552285 0 0.751634 0C0.950983 0 1.14217 0.0687746 1.28315 0.1912L5.00454 3.42372L8.72592 0.1912C8.86771 0.0722442 9.05762 0.00642175 9.25474 0.00790964C9.45186 0.00939752 9.64042 0.0780765 9.77981 0.199154C9.91919 0.320232 9.99826 0.484021 9.99997 0.655244C10.0017 0.826468 9.92591 0.991425 9.78896 1.11459L5.53606 4.8088C5.39508 4.93123 5.20389 5 5.00454 5C4.80519 5 4.614 4.93123 4.47302 4.8088L0.220115 1.11459C0.0791756 0.992127 0 0.826055 0 0.652894C0 0.479733 0.0791756 0.313661 0.220115 0.1912Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="stories-of-hope" class="bg-[#f4f1ee] py-[110px]">
+                    <div class="main-container">
+                        <h2
+                            class="stories-of-hope-title mb-[50px] md:text-4xl md:leading-[46px] text-3xl leading-[40px] lg:text-left text-center">
+                            Stories Of Hope From The
+                            Frontlines Of Charity</h2>
+                        <div
+                            class="flex lg:flex-row flex-col justify-center items-center lg:space-x-10 lg:space-y-0 space-y-6">
+                            <div
+                                class="story event-block-one max-w-[400px] min-[420px]:h-[480px] h-[450px] flex flex-col">
+                                <div class="inner-box">
+                                    <div class="image">
+                                        <img src="./assets/10-Heartwarming.jpg" alt="10-Heartwarming">
+                                    </div>
+                                    <div class="lower-content">
+                                        <div class="title">
+                                            <h3 class="text-center line-clamp-2">10 Heartwarming Volunteer Stories</h3>
+                                        </div>
+                                        <p class="line-clamp-3 mb-7">Discover inspiring stories of volunteers who have
+                                            made a significant impact
+                                            in
+                                            their
+                                            communities.
+                                            These stories highlight the power of compassion and the difference one
+                                            person
+                                            can
+                                            make.
+                                        </p>
+                                        <a class="text-[var(--theme-color)]" href="#">READ MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="story event-block-one max-w-[400px] min-[420px]:h-[480px] h-[450px] flex flex-col">
+                                <div class="inner-box">
+                                    <div class="image">
+                                        <img src="./assets/How-Small-Acts.jpg" alt="10-Heartwarming">
+                                    </div>
+                                    <div class="lower-content">
+                                        <div class="title">
+                                            <h3 class="text-center line-clamp-2">How Small Acts Of Kindness Make A Big
+                                                Difference
+                                            </h3>
+                                        </div>
+                                        <p class="line-clamp-3 mb-7">Small acts of kindness can have a ripple effect,
+                                            leading to significant changes
+                                            in
+                                            the
+                                            lives
+                                            of
+                                            individuals and communities. Learn how simple gestures can create a lasting
+                                            impact.
+                                        </p>
+                                        <a class="text-[var(--theme-color)]" href="#">READ MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section id="subscribe">
+                    <div class="main-container py-[110px]">
+                        <h2
+                            class="newsletter-title mb-[50px] md:text-4xl md:leading-[46px] text-3xl leading-[40px] text-center">
+                            Subscribe Our Newsletter</h2>
+                        <div class="grid md:grid-cols-[0.51fr_1fr_0.51fr] grid-cols-1 items-center">
+                            <div class="md:flex hidden flex-col space-y-3">
+                                <div class="w-full flex justify-center">
+                                    <img src="./assets/newsletter-1.jpg" alt="newsletter-1">
+                                </div>
+                                <div class="flex xl:flex-row flex-col xl:space-x-3 xl:space-y-0 space-y-3 items-center">
+                                    <img src="./assets/newsletter-2.jpg" alt="newsletter-2">
+                                    <img src="./assets/newsletter-3.jpg" alt="newsletter-3">
+                                </div>
+                                <div class="w-full flex justify-center">
+                                    <img src="./assets/newsletter-4.jpg" alt="newsletter-4">
+                                </div>
+                            </div>
+                            <form action="#" method="post"
+                                class="shadow-xl max-h-[300px] bg-white/10 xl:transform xl:translate-x-2 border border-white/30 backdrop-blur-md rounded-[6px] px-10 pt-14 pb-8 flex flex-col space-y-10 justify-start items-start">
+                                <input
+                                    class="outline-none px-4 py-3 w-full bg-white text-[#848484] border border-[#848484] focus:border-[var(--theme-color)] rounded-md"
+                                    type="email" name="email" placeholder="Enter your email" required>
+                                <button type="submit"
+                                    class="uppercase text-sm border border-[var(--theme-color)] text-[var(--theme-color)] rounded-full flex justify-center items-end px-[48px] py-4">Subscribe</button>
+                            </form>
+                            <div class="md:flex hidden flex-col space-y-3">
+                                <div class="w-full flex justify-center">
+                                    <img src="./assets/newsletter-1.jpg" alt="newsletter-5">
+                                </div>
+                                <div class="flex xl:flex-row flex-col xl:space-x-3 xl:space-y-0 space-y-3 items-center">
+                                    <img src="./assets/newsletter-3.jpg" alt="newsletter-6">
+                                    <img src="./assets/newsletter-2.jpg" alt="newsletter-7">
+                                </div>
+                                <div class="w-full flex justify-center">
+                                    <img src="./assets/newsletter-4.jpg" alt="newsletter-8">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="urgent-charity">
+                    <h2>Urgent Charity</h2>
+                    <p>Join us in our urgent charity efforts to support those in need. Your contributions can help
+                        provide
+                        essential resources and support to communities facing crises.</p>
+                </section>
+
+                <section id="our-events">
+                    <h2>Our Events</h2>
+                    <p>Stay updated with our upcoming events designed to bring people together for a good cause. From
+                        charity
+                        runs to fundraising galas, there's always something happening.</p>
+                </section>
+
+                <section id="new-profit-school">
+                    <h2>New Profit School</h2>
+                    <p>Explore our New Profit School initiative, aimed at empowering individuals with the skills and
+                        knowledge
+                        to create sustainable change in their communities.</p>
+                </section>
+            </main>
+
+            <footer class="bg-[#2D294D]">
+                <div class="footer-content main-container py-[50px] flex sm:flex-row sm:space-y-0 space-y-4 flex-col sm:justify-between items-center">
+                    <p class="text-[#9B99AD] font-[300] sm:text-base text-sm">© ALL RIGHTS RESERVED - <span
+                            class="text-white">EIGHTMENETEMPLATE ATT</span></p>
+                    <nav>
+                        <ul class="flex space-x-2 items-center text-[#9B99AD] font-[300] sm:text-base text-sm">
+                            <li><a href="#terms">Terms of Service</a></li>
+                            <div class=" w-[1px] h-5 bg-[#423F5F]"></div>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+            <div class="loader-wrap">
+                <div class="preloader"></div>
+                <div class="layer layer-one hide"><span class="overlay"></span></div>
+                <div class="layer layer-two hide"><span class="overlay"></span></div>
+                <div class="layer layer-three hide"><span class="overlay"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js"></script>
+    <script src="./scripts/output.js"></script>
+</body>
+
+</html>
