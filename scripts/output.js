@@ -79,21 +79,12 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// import Swiper, { Navigation, Pagination, Autoplay, EffectFade } from "swiper";
-
-// Swiper.use([Navigation, Pagination, Autoplay, EffectFade]);
-
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
-// import "swiper/css/effect-fade";
-
 // Initialize Swiper
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".swiper", {
     loop: true,
     effect: "slide",
-    speed: 2000,
+    speed: 1500,
     // spaceBetween: 100,
 
     pagination: {
