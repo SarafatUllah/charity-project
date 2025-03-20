@@ -17,7 +17,7 @@ body {
   -ms-overflow-style: none; /* IE 11 */
   scrollbar-color: #ed6121 #ececec; /* Firefox 64 */
   scrollbar-width: thin;
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 .main-container {
@@ -469,4 +469,98 @@ header .contact-info p {
 .event-block-one p {
   color: var(--dark-color);
   font-size: 20px;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+[data-animate] {
+  opacity: 0;
+}
+
+.fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.fade-down {
+  animation: fadeDown 0.8s ease forwards;
+}
+
+.fade-left {
+  animation: fadeLeft 0.8s ease forwards;
+}
+
+.fade-right {
+  animation: fadeRight 0.8s ease forwards;
+}
+
+.custom-fade-down {
+  transform: translateY(
+    -50px
+  ) !important; /* Adjust the value to your preference */
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease-in-out !important;
+}
+
+.custom-fade-down.aos-animate {
+  transform: translateY(
+    0
+  ) !important; /* The element will animate to this position */
+  opacity: 1;
+}
+
+.custom-fade-up {
+  transform: translateY(
+    50px
+  ) !important; /* Adjust the value to your preference */
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease-in-out !important;
+}
+
+.custom-fade-up.aos-animate {
+  transform: translateY(
+    0
+  ) !important; /* The element will animate to this position */
+  opacity: 1;
 }

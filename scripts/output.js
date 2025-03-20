@@ -78,35 +78,71 @@ window.addEventListener("scroll", function () {
     headerTemp.classList.remove("block");
   }
 });
-
+let firstLoad = true;
 // Initialize Swiper
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".swiper", {
     loop: true,
     effect: "slide",
     speed: 1500,
-    // spaceBetween: 100,
-
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
-
-    // Configure navigation arrows
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+
+    on: {
+      init: function () {
+        animateSlide(this.slides[this.activeIndex], firstLoad);
+        firstLoad = false; // Mark that first load is done
+      },
+      slideChangeTransitionStart: function () {
+        // Remove animations from all slides
+        this.slides.forEach((slide) => resetAnimations(slide));
+        const activeSlide = this.slides[this.activeIndex];
+        animateSlide(activeSlide); // show text immediately
+      },
+      // slideChangeTransitionEnd: function () {
+      //   animateSlide(this.slides[this.activeIndex]);
+      // },
+    },
   });
 
-  // 👉 Custom button event listeners:
-document.querySelector('.custom-next-btn').addEventListener('click', () => {
-  swiper.slideNext();
-});
+  function animateSlide(slide, isFirstLoad = false) {
+    const elements = slide.querySelectorAll("[data-animate]");
+    const initialDelay = isFirstLoad ? 1200 : 700;
 
-  document.querySelector('.custom-prev-btn').addEventListener('click', () => {
+    elements.forEach((el, index) => {
+      const animationType = el.getAttribute("data-animate");
+      el.style.opacity = "0";
+      // el.classList.remove("fade-up", "fade-down", "fade-left", "fade-right");
+      el.classList.remove("fade-up", "fade-down", "fade-left");
+      setTimeout(() => {
+        el.classList.add(`fade-${animationType}`);
+        el.style.animationDelay = `${index * 0.3}s`;
+      }, initialDelay);
+    });
+  }
+
+  function resetAnimations(slide) {
+    const elements = slide.querySelectorAll("[data-animate]");
+    elements.forEach((el) => {
+      el.classList.remove("fade-up", "fade-down", "fade-left");
+      el.style.opacity = "0";
+    });
+  }
+
+  // 👉 Custom button event listeners:
+  document.querySelector(".custom-next-btn").addEventListener("click", () => {
     swiper.slidePrev();
-  })
+  });
+
+  document.querySelector(".custom-prev-btn").addEventListener("click", () => {
+    swiper.slideNext();
+  });
 
   // const swiper = new Swiper(".swiper", {
   //   // Enable loop

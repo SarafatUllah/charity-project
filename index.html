@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Long Anglers or Rudicians</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css">
+
     <link href="./css/output.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/input.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Instrument+Serif:ital@0;1&family=Monomakh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&family=Quicksand:wght@300&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&family=Source+Serif+4:opsz,wght@8..60,200;8..60,300;8..60,400;8..60,500;8..60,600;8..60,700;8..60,800;8..60,900&family=Tinos:wght@700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/730e76ccd9.js" crossorigin="anonymous"></script>
 </head>
 
@@ -94,16 +96,21 @@
                         <div class="swiper-wrapper">
                             <!-- Slides -->
                             <div class="swiper-slide slide1">
-                                <div class="slide-content flex flex-col justify-center items-center">
-                                    <h2>Discover Our Updates & Charity News Content</h2>
-                                    <h3>A Day In The Life Of A Volunteer</h3>
-                                    <p>Volunteering is a rewarding experience that allows individuals to make a
+                                <div id="slide-content-container"
+                                    class="slide-content flex flex-col justify-center items-center">
+                                    <h2 data-animate="up">Discover Our Updates & Charity News Content</h2>
+                                    <h3 data-animate="down">A Day
+                                        In The Life
+                                        Of A Volunteer
+                                    </h3>
+                                    <p data-animate="left">Volunteering is a rewarding experience that allows
+                                        individuals to make a
                                         difference in their
                                         communities. From helping at local shelters to organizing charity events,
                                         volunteers play a
                                         crucial
                                         role in building stronger societies.</p>
-                                    <div class="link-btn !mr-0 max-w-[183px] flex justify-center">
+                                    <div data-animate="up" class="link-btn !mr-0 max-w-[183px] flex justify-center">
                                         <a href="#" class="theme-btn btn-style-one">
                                             <span class="z-10">READ MORE</span>
                                         </a>
@@ -112,16 +119,17 @@
                             </div>
                             <div class="swiper-slide slide2">
                                 <div class="slide-content flex flex-col justify-center items-center">
-                                    <h2>Discover Our Updates & Charity News Content</h2>
-                                    <h3>How Volunteering Can Transform Your Life</h3>
-                                    <p>Volunteering not only benefits the community but also has a profound impact on
+                                    <h2 data-animate="up">Discover Our Updates & Charity News Content</h2>
+                                    <h3 data-animate="down">How Volunteering Can Transform Your Life</h3>
+                                    <p data-animate="left">Volunteering not only benefits the community but also has a
+                                        profound impact on
                                         the volunteer.
                                         It
                                         can
                                         lead to personal growth, new skills, and a sense of fulfillment that comes from
                                         helping
                                         others.</p>
-                                    <div class="link-btn !mr-0 max-w-[183px] flex justify-center">
+                                    <div data-animate="up" class="link-btn !mr-0 max-w-[183px] flex justify-center">
                                         <a href="#" class="theme-btn btn-style-one">
                                             <span class="z-10">READ MORE</span>
                                         </a>
@@ -130,13 +138,14 @@
                             </div>
                             <div class="swiper-slide slide3">
                                 <div class="slide-content flex flex-col justify-center items-center">
-                                    <h2>Discover Our Updates & Charity News Content</h2>
-                                    <h3>Building Stronger Communities</h3>
-                                    <p>Strong communities are built on the foundation of mutual support and cooperation.
+                                    <h2 data-animate="up">Discover Our Updates & Charity News Content</h2>
+                                    <h3 data-animate="down">Building Stronger Communities</h3>
+                                    <p data-animate="left">Strong communities are built on the foundation of mutual
+                                        support and cooperation.
                                         Volunteering
                                         fosters a sense of belonging and encourages people to work together towards
                                         common goals.</p>
-                                    <div class="link-btn !mr-0 max-w-[183px] flex justify-center">
+                                    <div data-animate="up" class="link-btn !mr-0 max-w-[183px] flex justify-center">
                                         <a href="#" class="theme-btn btn-style-one">
                                             <span class="z-10">READ MORE</span>
                                         </a>
@@ -171,13 +180,13 @@
 
                 <section id="stories-of-hope" class="bg-[#f4f1ee] py-[110px]">
                     <div class="main-container">
-                        <h2
-                            class="stories-of-hope-title mb-[50px] md:text-4xl md:leading-[46px] text-3xl leading-[40px] lg:text-left text-center">
+                        <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-once="true"
+                            class="stories-of-hope-title custom-fade-down mb-[50px] md:text-4xl md:leading-[46px] text-3xl leading-[40px] lg:text-left text-center">
                             Stories Of Hope From The
                             Frontlines Of Charity</h2>
                         <div
                             class="flex lg:flex-row flex-col justify-center items-center lg:space-x-10 lg:space-y-0 space-y-6">
-                            <div
+                            <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true"
                                 class="story event-block-one max-w-[400px] min-[420px]:h-[480px] h-[450px] flex flex-col">
                                 <div class="inner-box">
                                     <div class="image">
@@ -201,7 +210,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div
+                            <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true"
                                 class="story event-block-one max-w-[400px] min-[420px]:h-[480px] h-[450px] flex flex-col">
                                 <div class="inner-box">
                                     <div class="image">
@@ -233,11 +242,11 @@
 
                 <section id="subscribe">
                     <div class="main-container py-[110px]">
-                        <h2
-                            class="newsletter-title mb-[50px] md:text-4xl md:leading-[46px] text-3xl leading-[40px] text-center">
+                        <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-once="true"
+                            class="newsletter-title custom-fade-down mb-[50px] md:text-4xl md:leading-[46px] text-3xl leading-[40px] text-center">
                             Subscribe Our Newsletter</h2>
                         <div class="grid md:grid-cols-[0.51fr_1fr_0.51fr] grid-cols-1 items-center">
-                            <div class="md:flex hidden flex-col space-y-3">
+                            <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="md:flex hidden flex-col space-y-3">
                                 <div class="w-full flex justify-center">
                                     <img src="./assets/newsletter-1.jpg" alt="newsletter-1">
                                 </div>
@@ -249,15 +258,15 @@
                                     <img src="./assets/newsletter-4.jpg" alt="newsletter-4">
                                 </div>
                             </div>
-                            <form action="#" method="post"
-                                class="shadow-xl max-h-[300px] bg-white/10 xl:transform xl:translate-x-2 border border-white/30 backdrop-blur-md rounded-[6px] px-10 pt-14 pb-8 flex flex-col space-y-10 justify-start items-start">
+                            <form data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" action="#" method="post"
+                                class="custom-fade-up shadow-xl max-h-[300px] bg-white/10 xl:transform xl:translate-x-2 border border-white/30 backdrop-blur-md rounded-[6px] px-10 pt-14 pb-8 flex flex-col space-y-10 justify-start items-start">
                                 <input
                                     class="outline-none px-4 py-3 w-full bg-white text-[#848484] border border-[#848484] focus:border-[var(--theme-color)] rounded-md"
                                     type="email" name="email" placeholder="Enter your email" required>
                                 <button type="submit"
                                     class="uppercase text-sm border border-[var(--theme-color)] text-[var(--theme-color)] rounded-full flex justify-center items-end px-[48px] py-4">Subscribe</button>
                             </form>
-                            <div class="md:flex hidden flex-col space-y-3">
+                            <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="md:flex hidden flex-col space-y-3">
                                 <div class="w-full flex justify-center">
                                     <img src="./assets/newsletter-5.jpg" alt="newsletter-5">
                                 </div>
@@ -296,7 +305,8 @@
             </main>
 
             <footer class="bg-[#2D294D]">
-                <div class="footer-content main-container py-[50px] flex sm:flex-row sm:space-y-0 space-y-4 flex-col sm:justify-between items-center">
+                <div
+                    class="footer-content main-container py-[50px] flex sm:flex-row sm:space-y-0 space-y-4 flex-col sm:justify-between items-center">
                     <p class="text-[#9B99AD] font-[300] sm:text-base text-sm">© ALL RIGHTS RESERVED - <span
                             class="text-white">EIGHTMENETEMPLATE ATT</span></p>
                     <nav>
@@ -317,8 +327,13 @@
         </div>
     </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js"></script>
     <script src="./scripts/output.js"></script>
+
 </body>
 
 </html>
